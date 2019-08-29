@@ -15,5 +15,6 @@ ldap:
   ports:
     - 389:389
     - 636:636
+    - 10636:10636
   restart: always
 
