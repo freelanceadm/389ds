@@ -31,7 +31,7 @@ RUN rm -fr /usr/lib/systemd/system && \
 # Move config to temporary location until volume is ready
 RUN mkdir /etc/dirsrv-tmpl && mv /etc/dirsrv/* /etc/dirsrv-tmpl
 
-EXPOSE 389 636
+EXPOSE 389 636 10636
 
 # supervisord
 RUN yum install -y python python-setuptools && \
